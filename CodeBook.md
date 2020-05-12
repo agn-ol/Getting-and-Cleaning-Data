@@ -1,11 +1,14 @@
-#Human Activity Recognition Using Smartphones Data Set
+---
+title: Human Activity Recognition Using Smartphones Data Set
+output: html_document
+
+---
 
 This codebook describes the variables, the data, and any transformations or work that are performed to clean the data.
 ##The Original Dataset
 
-    Original data is available at:
-    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-    Original description of the dataset is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Original data is available [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+Original description of the dataset is available [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 
 ##Data Set Information
 
@@ -16,9 +19,9 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 The transformation process was already detailed in the README.md file. In summary, from the original data, I:
 
-    Join the test and train sets.
-    Keep only the features that refer to the mean and standard deviation, those that contain "mean()" and "std()" (discarding the meanFreq() and angle varaibles)
-    Group by subject and activity type and then summarise the values by the mean.
+1. Join the test and train sets.
+2. Keep only the features that refer to the mean and standard deviation, those that contain "mean()" and "std()" (discarding the meanFreq() and angle varaibles)
+3. Group by subject and activity type and then summarise the values by the mean.
 
 ##Variables in the tidy dataset
 ###subject
@@ -33,26 +36,26 @@ All measurement features come from either the accelerometer (measured in g's [9.
 
 The different variable names contain information about its meaning by combining all the name parts
 
-    t at the beginning means that is a measurement based on the "time" domain. Measurements taken from the phone were measured at a frequency of 50Hz, meaning 50 discrete measurements per second.
+*t at the beginning means that is a measurement based on the "time" domain. Measurements taken from the phone were measured at a frequency of 50Hz, meaning 50 discrete measurements per second.
 
-    f at the beginning means that is a measurement based on the "frequency" domain, taken as a Fast Fourier Transform of the time-based signals.
+*f at the beginning means that is a measurement based on the "frequency" domain, taken as a Fast Fourier Transform of the time-based signals.
 
-    Body means that signal is based on the body of the subject, one of two components derived from the time based signals on the phone's accelerometer
+*Body means that signal is based on the body of the subject, one of two components derived from the time based signals on the phone's accelerometer
 
-    Gravity means that signal is based on gravity. Gravity is the second of the two measurement components derived from the phone's accelerometer.
+*Gravity means that signal is based on gravity. Gravity is the second of the two measurement components derived from the phone's accelerometer.
 
-    Gyro means that signal is taken from the gyroscope on the phone.
+*Gyro means that signal is taken from the gyroscope on the phone.
 
-    Jerk means that is a measurement of sudden movement, based on body acceleration and angular velocity.
+*Jerk means that is a measurement of sudden movement, based on body acceleration and angular velocity.
 
-    Mag indicates a measurement of the magnitude of the Euclidean norm of a three-dimensional signal.
+*Mag indicates a measurement of the magnitude of the Euclidean norm of a three-dimensional signal.
 
-    X indicates that measurement was taken along the "X" dimension of the phone, as in a three-dimensional Cartesian coordinate system of X, Y and Z.
+*X indicates that measurement was taken along the "X" dimension of the phone, as in a three-dimensional Cartesian coordinate system of X, Y and Z.
 
-    Y indicates that measurement was taken along the "Y" dimension of the phone, as in a three-dimensional Cartesian coordinate system of X, Y and Z.
+*Y indicates that measurement was taken along the "Y" dimension of the phone, as in a three-dimensional Cartesian coordinate system of X, Y and Z.
 
-    Z indicates that measurement was taken along the "Z" dimension of the phone, as in a three-dimensional Cartesian coordinate system of X, Y and Z.
+*Z indicates that measurement was taken along the "Z" dimension of the phone, as in a three-dimensional Cartesian coordinate system of X, Y and Z.
 
-    mean() indicates that the measurement is a mean in the original dataset
+*mean() indicates that the measurement is a mean in the original dataset
 
-    std() indicates that the measurement is a standard deviation in the original dataset.
+*std() indicates that the measurement is a standard deviation in the original dataset.
